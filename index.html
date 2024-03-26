@@ -1,0 +1,57 @@
+< html >
+ < head >
+ < title > Exemplu utilizare formular</title>
+ <link rel = "stylesheet" href= "style.css" >
+ </ head >
+ < body >
+ < form action= "colectare.php" method= "post" >
+ < fieldset >
+ < legend > Informații personale</legend>
+ 
+ <div class= "grupare" >
+
+ < label for= "nume" > Nume:</ label >
+ < input type = "text" name = "nume" required >
+    
+ </ div >
+
+
+ < div class= "grupare" >
+ < label for= "prenume" > Prenume:</ label >
+ < input type = "text" name = "prenume" required >
+ 
+     </ div >
+
+
+ < div class= "grupare" >
+ < label > Statut:</ label >< br >
+ < input type = "radio" name = "statut" value = "elev" required >
+ < label > Elev </ label >
+ < input type = "radio" name = "statut" value = "student" required >
+ < label > Student </ label >
+
+ </ div >
+
+
+ < div class= "grupare" >
+ < label > Limbaje de programare:</ label >< br >
+ < input type = "checkbox" name = "limbaj[]" value = "C/C++" >
+ < label > C / C++ </ label >< br >
+ < input type = "checkbox" name = "limbaj[]" value = "PHP" >
+ < label > PHP </ label >< br >
+ < input type = "checkbox" name = "limbaj[]" value = "Python" >
+ < label > Python </ label >< br >
+ < input type = "checkbox" name = "limbaj[]" value = "Java" >
+ < label > Java </ label >< br >
+ </ div >
+
+
+ < div class= "grupare" >
+ < button type = "submit" > Trimite </ button >
+ < button type = "reset" > Reset </ button >
+ </ div >
+ </ fieldset >
+ </ form >
+ </ body >
+</ html >
+
